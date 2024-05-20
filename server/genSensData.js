@@ -19,7 +19,7 @@ function sensData() {
         //   res.push([key, value]);
         //   console.log(key, value);
         // });
-        console.log(obj);
+        // console.log(obj);
       }, 3000);
     });
 }

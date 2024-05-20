@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import axios from "axios";
 import Dashboard from "./pages/DashboardPage";
 import Activity from "./pages/ActivityPage";
+import Welcome from "./pages/Welcome";
 
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -59,6 +60,7 @@ const App = () => {
         path="/home"
         element={isAuthenticated ? <Home /> : <Navigate to="/login" />}
       /> */}
+      <Route path="/" element={<Welcome />}></Route>
       <Route path="/login" element={<LoginPage />} />
       <Route
         path="/airline/home"
